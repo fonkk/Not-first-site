@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">  
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = PT + Sans & display = swap" rel = "таблица стилей">
+    <link rel="shortcut icon" href="Img/javascript.svg" type="image/svg">
+    <title>Not first site</title>
+</head>
+<div id="surpriseScreen">
+    <div id="surpriseContent">
+        <p id="time"></p>
+        <p id="dateWithName"></p>
+    </div>
+</div>
+<header id="header">
+    <nav>
+        <div>
+            <img src="Img/javascript.svg" width="70px" height="70px" id="logo">
+            <ul>
+                <li><a href="#sectionInfo">О JavaScript</a></li>
+                <li> <a href="#sectionMenu">Примеры</a> </li>
+                <li><a href="#sectionTest">Тест</a></li>
+            </ul>
+        </div>
+
+        <p id="helloResSessionStorage"></p>
+    </nav>
+    
+</header> 
+<body>
+    
+    <section id="sectionInfo">
+        <div id="Info1">
+            <img src="Img/jsimg.jpg" width="450px">
+            <div class="text" id="text1">
+                <h1>JavaScript == 'Надо знать'</h1>
+                <p><span>JavaScript</span>  – это язык программирования, ориентированный на веб-разработку, будь то простые анимации на сайте или целые веб-приложения. В наше время без JS обойтись практически невозможно, а значит, если ты хочешь стать веб-разработчиком учить его обязательно!</p>
+            </div>
+        </div>
+        <div id="Info2">
+            <img src="Img/js2.jfif" width="500px">
+            <div class="text" id="text2">
+                <h1>А что умеет JavaScript?</h1>
+                <p>Ядро языка <span>JavaScript</span> состоит из некоторого количества обычных возможностей, которые позволяют делать следующее: хранить данные внутри переменных, операции над фрагментами текстов, запускать код в соответствии с определенными событиями происходящими на web странице и многое другое.</p>
+            </div>
+        </div>
+
+        <div id="Info3">
+            <img src="Img/js3.webp" width="500px" height="300px">
+            <div class="text" id="text3">
+                <h1>Что делает JavaScript особенным?</h1>
+                <ul>
+                    <li>Полная интеграция с HTML/CSS. </li>
+                    <li>Простые вещи делаются просто. </li>
+                    <li>Поддерживается всеми основными браузерами и включён по умолчанию.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Info4">
+            <img src="Img/js4.jpg" width="500px">
+            <div class="text" id="text4">
+                <h1>JavaScript это круто!</h1>
+                <p><span>JavaScript</span> – это единственная браузерная технология, сочетающая в себе всё, что нужно веб-разработчику. Вот что делает JS особенным. И именно поэтому это самый распространённый инструмент для создания интерфейсов в браузере. </p>            
+            </div>
+        </div>
+        
+    </section>
+    <section id="sectionMenu">
+        <p>В этом блок моего сайта все функции написаны с помощью JavaScript. Попробуй как они работают!</p>
+        <div id="Menu">
+            <div id="hello" class="example">
+                <div>
+                    <label for="sayhello">Введи свое имя</label>
+                    <input type="text" id="sayhello" required>
+                </div>
+                
+                <p id="helloRes" class="res"></p>
+
+                <input type="button" id="sayhellobutton" class="buttons" value="Нажми и увидишь, что произойдет">
+            </div>
+
+            <div class="line"></div>
+
+
+            <div id="square" class="example">
+                <div id="squareInputs">
+                    <div>
+                        <label for="side1" >Введи длину сторону</label>
+                        <input type="text" id="side1" required>
+                    </div>
+
+                    <div>
+                        <label for="side2" >Введи длину высоту</label>
+                        <input type="text" id="side2" required>
+                    </div>    
+                </div>
+
+                <p id="squareRes" class="res"></p>
+
+                <input type="button" id="sqrbutton" class="buttons" value="Узнать площадь треугольника">
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <div id="strings" class="example">
+                <div id="stringsInputs">
+                    <div>
+                        <label for="string1" >Введи строку</label>
+                        <input type="text" id="string1" required>
+                    </div>
+
+                    <div>
+                        <label for="string2" >И еще одну</label>
+                        <input type="text" id="string2" required>
+                    </div>    
+                </div>
+
+                <p id="stringsRes" class="res"></p>
+
+                <input type="button" id="stringsbutton" class="buttons" value="Сравни длины введенных строк">
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <div id="maxmin" class="example">
+                <div>
+                    <label for="maxmininput">Введи 5 чисел</label>
+                    <div id="maxminynputsdiv">
+                        <input type="text" id="maxmininput1" class="maxminynputs" required>
+                        <input type="text" id="maxmininput2" class="maxminynputs" required>
+                        <input type="text" id="maxmininput3" class="maxminynputs" required>
+                        <input type="text" id="maxmininput4" class="maxminynputs" required>
+                        <input type="text" id="maxmininput5" class="maxminynputs" required>
+                    </div>
+                </div>
+
+                <p id="maxminRes" class="res"></p>
+
+                <input type="button" id="maxminbutton" class="buttons" value="Узнать минимум и максимум" >
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <div id="timer" class="example">
+                <p id="pTimer"> 0:0:0</p>
+                <div>
+                    <input type="button" id="start" class="buttons" value="Старт"> 
+                    <input type="button" id="stop" class="buttons" value="Стоп" disabled> 
+                    <input type="button" id="restart" class="buttons" value="Начать заново">
+                </div>
+                
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <div id="surprise" class="example">
+                <input type="button" id="surprisebutton" class="buttons" value="Нажми на меня!">
+            </div>
+
+            
+
+        </div>
+    </section>
+    <section id="sectionTest">
+        <div id="testDiv">
+            <div id="testText">
+                <p>В этом разделе можно пройти тест и узнать как ты хорош в JavaScript.</p>
+            </div>
+            <input type="button" id="testButtonRetry" class="buttons" value="Начать Заново" style="display: none;">
+            <div id="test">
+                <div id="question1" class="question">
+                    <p>Вопрос 1.</p>
+                    <p>Поддерживает ли JavaScript автоматическое преобразование типов?</p>
+                    <div>
+                        <input type="radio" name="question1" id="question1_1" value="1">
+                        <label for="question1_1" id="question1_1_lab">Нет</label>
+                    </div>
+                        
+                    <div>
+                        <input type="radio" name="question1" id="question1_2" value="2">
+                        <label for="question1_2" id="question1_2_lab">Не полностью</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question1" id="question1_3" value="3">
+                        <label for="question1_3" id="question1_3_lab">Да</label>
+                        <p></p>
+                    </div> 
+                    <div>
+                        <input type="radio" name="question1" id="question1_4" value="4">
+                        <label for="question1_4" id="question1_4_lab">Зависит от фреймворков</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question2" class="question">
+                    <p>Вопрос 2.</p>
+                    <p>Что будет выведено в консоли NaN === NaN ?</p>
+
+                    <div>
+                        <input type="radio" name="question2" id="question2_1" value="1">
+                        <label for="question2_1" id="question2_1_lab">Infinity</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        <input type="radio" name="question2" id="question2_2" value="2">
+                        <label for="question2_2" id="question2_2_lab">true</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question2" id="question2_3" value="3">
+                        <label for="question2_3" id="question2_3_lab">ReferenceError</label>
+                        <p></p>
+                    </div> 
+                    <div>
+                        <input type="radio" name="question2" id="question2_4" value="4">
+                        <label for="question2_4" id="question2_4_lab">false</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question3" class="question">
+                    <p>Вопрос 3.</p>
+                    <p style="width: 65%; text-align: center;">Виберите метод Javascript, который позволяет выполнять произвольный код в определенные периоды времени.</p>
+
+                    <div>
+                        <input type="radio" name="question3" id="question3_1" value="1">
+                        <label for="question3_1" id="question3_1_lab">setTimeOut()</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        
+                        <input type="radio" name="question3" id="question3_2" value="2">
+                        <label for="question3_2" id="question3_2_lab">timer()</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question3" id="question3_3" value="3">
+                        <label for="question3_3" id="question3_3_lab">setInterval()</label>
+                        <p></p>
+                    </div> 
+                    <div>
+                        <input type="radio" name="question3" id="question3_4" value="4">
+                        <label for="question3_4" id="question3_4_lab">callCode()</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question4" class="question">
+                    <p>Вопрос 4.</p>
+                    <p>Как преобразовать строковую переменную `str` в массив символов?</p>
+
+                    <div>
+                        <input type="radio" name="question4" id="question4_1" value="1">
+                        <label for="question4_1" id="question4_1_lab">str.toArray()</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        <input type="radio" name="question4" id="question4_2" value="2">
+                        <label for="question4_2" id="question4_2_lab">str.join(` `)</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question4" id="question4_3" value="3">
+                        <label for="question4_3" id="question4_3_lab">str.join(``)</label>
+                        <p></p>
+                    </div> 
+                    <div>
+                        <input type="radio" name="question4" id="question4_4" value="4">
+                        <label for="question4_4" id="question4_4_lab">str.split(``)</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question5" class="question">
+                    <p>Вопрос 5.</p>
+                    <p>Можете ли вы передать функцию в качестве аргумента другой функции?</p>
+
+                    <div>
+                        <input type="radio" name="question5" id="question5_1" value="1">
+                        <label for="question5_1" id="question5_1_lab">Нет</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        <input type="radio" name="question5" id="question5_2" value="2">
+                        <label for="question5_2" id="question5_2_lab">Да</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question5" id="question5_3" value="3">
+                        <label for="question5_3" id="question5_3_lab">Не всегда</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question6" class="question">
+                    <p>Вопрос 6.</p>
+                    <p>Какая компания разработала JavaScript?</p>
+
+                    <div>
+                        <input type="radio" name="question6" id="question6_1" value="1">
+                        <label for="question6_1" id="question6_1_lab">JSDevs</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        <input type="radio" name="question6" id="question6_2" value="2">
+                        <label for="question6_2" id="question6_2_lab">Netscape</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="question6" id="question6_3" value="3">
+                        <label for="question6_3" id="question6_3_lab">Green Space</label>
+                        <p></p>
+                    </div> 
+                    <div>
+                        <input type="radio" name="question6" id="question6_4" value="4">
+                        <label for="question6_4" id="question6_4_lab">Proscape</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question7" class="question">
+                    <p>Вопрос 7.</p>
+                    <p>Какой символ используется для однострочных комментариев в Javascript?</p>
+
+                    <div>
+                        
+                        <input type="radio" name="question7" id="question7_1" value="1">
+                        <label for="question7_1" id="question7_1_lab">//</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        
+                        <input type="radio" name="question7" id="question7_2" value="2">
+                        <label for="question7_2" id="question7_2_lab"><-- --!></label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        
+                        <input type="radio" name="question7" id="question7_3" value="3">
+                        <label for="question7_3" id="question7_3_lab">/</label>
+                        <p></p>
+                    </div> 
+                    <div>
+                        
+                        <input type="radio" name="question7" id="question7_4" value="4">
+                        <label for="question7_4" id="question7_4_lab">/**/</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question8" class="question">
+                    <p>Вопрос 8.</p>
+                    <p>Как объявить функцию в JS?</p>
+
+                    <div>
+                        <input type="radio" name="question8" id="question8_1" value="1">
+                        <label for="question8_1" id="question8_1_lab">def fh = function(){};</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        
+                        <input type="radio" name="question8" id="question8_2" value="2">
+                        <label for="question8_2" id="question8_2_lab">function fh(){};</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        
+                        <input type="radio" name="question8" id="question8_3" value="3">
+                        <label for="question8_3" id="question8_3_lab">let function fh(){};</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question9" class="question">
+                    <p>Вопрос 9.</p>
+                    <p>Какой из следующих методов удаляет последний элемент из массива и возвращает этот элемент?</p>
+
+                    <div>
+                        
+                        <input type="radio" name="question9" id="question9_1" value="1">
+                        <label for="question9_1" id="question9_1_lab">get()</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        
+                        <input type="radio" name="question9" id="question9_2" value="2">
+                        <label for="question9_2" id="question9_2_lab">pop()</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        
+                        <input type="radio" name="question9" id="question9_3" value="3">
+                        <label for="question9_3" id="question9_3_lab">None</label>
+                        <p></p>
+                    </div> 
+
+                    <div>
+                        
+                        <input type="radio" name="question9" id="question9_4" value="4">
+                        <label for="question9_4" id="question9_4_lab">last()</label>
+                        <p></p>
+                    </div> 
+                </div>
+
+
+                <div id="question10" class="question">
+                    <p>Вопрос 10.</p>
+                    <p>Каков результат 3 + 2 + "7"?</p>
+
+                    <div>
+                        
+                        <input type="radio" name="question10" id="question10_1" value="1">
+                        <label for="question10_1" id="question10_1_lab">327</label>
+                        <p></p>
+                    </div>
+                        
+                    <div>
+                        
+                        <input type="radio" name="question10" id="question10_2" value="2">
+                        <label for="question10_2" id="question10_2_lab">57</label>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        
+                        <input type="radio" name="question10" id="question10_3" value="3">
+                        <label for="question10_3" id="question10_3_lab">12</label>
+                        <p></p>
+                    </div> 
+
+                    <div>
+                        
+                        <input type="radio" name="question10" id="question10_4" value="4">
+                        <label for="question10_4" id="question10_4_lab"> 32+7</label>
+                        <p></p>
+                    </div> 
+                </div>                
+            </div>
+            <input type="button" id="testButton" class="buttons" value="Проверить">
+            
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script src="Js/Script.js"></script>
+</html>
