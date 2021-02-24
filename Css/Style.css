@@ -1,0 +1,383 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+span{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h1{
+    font-weight: 900;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+.line{
+    border: 1px solid rgba(0,0,0, .3);
+
+}
+
+label{
+    margin-right: 20px;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0px;
+    height: 80px;
+    background-color:rgb(143, 143, 143);
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    width: 1200px;
+     margin:0 auto; 
+}
+
+nav > div{
+    display: flex;
+    width: 50%;
+}
+
+#logo{
+    background-color: white;
+    float: left;
+}
+
+nav div >ul{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 250px;
+    margin: 0;
+}
+
+nav li{
+    list-style: none;
+    width: auto;
+}
+
+
+#helloResSessionStorage{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+body{
+    width: 1200px;
+    margin:0 auto;
+
+}
+
+section:first-of-type{
+    padding-top: 80px;
+}
+
+#sectionInfo{
+    flex-direction: column;
+}
+
+#Info1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    height: 300px;
+    width: 1200px;
+    font-size: 20px;
+}
+#Info2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    height: 300px;
+    width: 1200px;
+    font-size: 20px;
+}
+#Info3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    height: 300px;
+    width: 1200px;
+    font-size: 20px;
+}
+
+
+#Info3 li{
+    margin-bottom: 15px;
+}
+
+#Info4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    height: 300px;
+    width: 1200px;
+    font-size: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 55%;
+}
+
+.text p{
+    width: 100%;
+}
+
+
+
+#sectionMenu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+#sectionMenu  p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#sectionMenu > p{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#Menu{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0, .3);
+    border-radius: 10px;
+    width: 1000px;  
+    font-size: 15px;
+
+
+}
+
+.example{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#squareInputs div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#stringsInputs div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maxminynputs{
+    width: 20px;
+    height: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#maxminynputsdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+#maxmin div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+
+input{
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #7a7b7e;
+    border-radius: 10px;
+    outline:none;
+}
+
+.buttons{
+    border: 1px solid #7a7b7e;
+    border-radius: 20px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    
+}
+
+.buttons:active{
+    background-color: rgb(223, 223, 223);
+    transform: scaleX(1.05);
+    transform: scaleY(1.1);
+}
+
+#timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#timer p{
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#surprise{
+    justify-content: center;
+}
+
+#surprisebutton{
+    width: 200px;
+}
+
+#surpriseScreen{
+    display: none; 
+    position: fixed;
+    width:100%;
+    height:0%;
+    background: url(../Img/javascript-small-horizontal-4k.png) no-repeat;
+    z-index: 3;
+    background-size: 100%;
+    left: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#surpriseContent{
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+}
+
+#dateWithName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+}
+
+
+#testText{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+.question div{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+
+
+}
+
+.question p {
+    display: flex;
+    align-self: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.question  p:first-of-type {
+    display: flex;
+    align-self: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#sectionTest{
+    padding-top: 100px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#testDiv label:hover{
+    transform: scale(1.05);
+    transform: scaleY(1.3);
+    color: rgb(82, 82, 82);
+}
+#testDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+#testButton{
+    height: 60px;
+}
+#testButtonRetry{
+    height: 60px;
+    margin-bottom: 20px;
+}
