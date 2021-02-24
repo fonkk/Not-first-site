@@ -37,7 +37,8 @@ document.getElementById('sqrbutton').onclick = function(){
         document.getElementById('squareRes').innerHTML = 'Нужно ввести все значения(';
         return;
     }
-    document.getElementById('squareRes').innerHTML = 0.5*(a*b);
+    else if (!isNaN(0.5*(a*b))) document.getElementById('squareRes').innerHTML = 0.5*(a*b);
+    else document.getElementById('squareRes').innerHTML = 'Нужно ввести числа(';
 }
 
 
@@ -58,12 +59,15 @@ document.getElementById('stringsbutton').onclick = function(){
 // Функция для нахождения максимума и минимума
 document.getElementById('maxminbutton').onclick = function(){
     let arr = [];
-
+    let sum = 0;
     arr.push(document.getElementById('maxmininput1').value);  
     arr.push(document.getElementById('maxmininput2').value);
     arr.push(document.getElementById('maxmininput3').value);
     arr.push(document.getElementById('maxmininput4').value);
     arr.push(document.getElementById('maxmininput5').value);
+    for (let index = 0; index < arr.length; index++) {
+      sum+=arr[index];      
+    }
         let min = arr[0];
         let max = arr[0];
     if(arr[0] == ""){
@@ -82,7 +86,10 @@ document.getElementById('maxminbutton').onclick = function(){
         }
         
     }
-    document.getElementById('maxminRes').innerHTML = min +  ' ' + max;
+    if (isNaN(sum*2)) {
+      document.getElementById('maxminRes').innerHTML = 'Нужно ввести числа(';
+    }
+    else document.getElementById('maxminRes').innerHTML = 'Минимальное: '+ min +  '  максимальное: ' + max;
 }
 
 
